@@ -1,0 +1,21 @@
+1. 평균값 구하기
+다음과 같이 총 10줄로 이루어진 sample.txt 파일이 있다. sample.txt 파일의 숫자 값을 모두 읽어 총합과 평균 값을 구한 후 
+평균 값을 result.txt 파일에 쓰는 프로그램을 작성하시오.
+70
+60
+55
+75
+95
+90
+80
+80
+85
+100
+
+2. 패턴식을 정의하고 테스트 하시오
+emails = ['python@mail.example.com', 'python+kr@example.com',              # 올바른 형식
+          'python-lang@example.co.kr', 'python_10@example.info',         # 올바른 형식
+          'python.lang@e-xample.com',                                    # 올바른 형식
+          '@example.com', 'python@example', 'python@example-com']          # 잘못된 형식
+
+3. 뉴스 기사에서 온도 및 강수량을 추출하여 출력하는 정규식 작성

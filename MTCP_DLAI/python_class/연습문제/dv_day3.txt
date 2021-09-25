@@ -1,0 +1,38 @@
+유방암 데이터 시각화 및 전처리
+데이터주소:https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29
+Attribute Information:
+
+1) ID number
+2) Diagnosis (M = malignant, B = benign)
+3-32)
+
+Ten real-valued features are computed for each cell nucleus:
+
+a) radius (mean of distances from center to points on the perimeter)
+b) texture (standard deviation of gray-scale values)
+c) perimeter
+d) area
+e) smoothness (local variation in radius lengths)
+f) compactness (perimeter^2 / area - 1.0)
+g) concavity (severity of concave portions of the contour)
+h) concave points (number of concave portions of the contour)
+i) symmetry
+j) fractal dimension ("coastline approximation" - 1)
+
+
+1) 데이터 기술 통계
+- 평균, 분산, 표준편차 1사분위, 2사분위 등 열단위로 내보기
+2) 표준화
+
+3) plot 시각화
+
+4) melt
+
+diagnosis features       value
+M          radius_mean  1.096...
+M
+...
+
+분석 결과
+
+

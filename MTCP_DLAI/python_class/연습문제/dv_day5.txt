@@ -1,0 +1,20 @@
+- https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data
+
+목표(종속)변수 : SalePrice
+
+독립변수 : 나머지 변수들
+
+1. 목표 변수 값에 영향을 미치는 요인 변수?
+
+MSZoning, Condition1, YearBuilt, Bedroom
+
+2. 시각화
+
+독립변수 전체와 SalePrice 관계
+
+- (x 축) MSZoning, Street, Alley, LotShape ...의 종류에 따른 SalePrice를 boxplot 형태로 표현
+
+- pairplot
+
+3. 상관계수
+

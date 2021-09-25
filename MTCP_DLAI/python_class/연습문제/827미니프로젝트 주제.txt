@@ -1,0 +1,47 @@
+
+bank-marketing 데이터분석 & 시각화
+- 각 열에 대한 시각화
+- 정기예금과 일반 변수와의 관계(수치 또는 시각화)
+- 상관계수 및 시각화
+- 나이에 따른 정기예금 신청 여부 
+
+age        4521 non-null   int64 
+ 1   job        4521 non-null   object
+ 2   marital    4521 non-null   object
+ 3   education  4521 non-null   object
+ 4   default    4521 non-null   object
+ 5   balance    4521 non-null   int64 
+ 6   housing    4521 non-null   object
+ 7   loan       4521 non-null   object
+ 8   contact    4521 non-null   object
+ 9   day        4521 non-null   int64 
+ 10  month      4521 non-null   object
+ 11  duration   4521 non-null   int64 
+ 12  campaign   4521 non-null   int64 
+ 13  pdays      4521 non-null   int64 
+ 14  previous   4521 non-null   int64 
+ 15  poutcome   4521 non-null   object
+ 16  y       
+
+입력 변수:
+# 은행 고객 데이터:
+1 age   	- 연령:(숫자)
+2 job   	- 직업: 직업 유형(카테고리: '관리', '블루칼라', '기업가', '하녀', '관리', '은퇴') ,'자영업','서비스','학생','기술자','실업자','모름')
+3 marital 	- 결혼: 결혼 여부 (범주 : '이혼','기혼','미혼','모름 '; 참고: '이혼'은 이혼 또는 사별을 의미함)
+4 education - 교육:(범주: 'basic.4y','basic.6y','basic.9y','high.school','문맹','professional.course ','university.degree','unknown')
+5 default   - 기본: 기본 크레딧이 있습니까? (범주: '아니오','yes','unknown') 
+6 balance   - 잔액 
+7 housing	- 주택: 주택 융자가 있습니까? (카테고리: '아니오','예','모름')
+8 loan   	- 대출: 개인 대출이 있습니까? (범주: '아니오', '예', '알 수 없음')
+# 현재 캠페인의 마지막 연락처와 관련:
+9  contact  - 연락처: 연락처 통신 유형(카테고리: '셀룰러', '전화')
+10 day    	- 일: 숫자
+11 month    - 월: 해당 연도의 마지막 연락처 월(카테고리: 'jan', 'feb', ' mar', ..., 'nov', 'dec')
+12 duration - 지속 시간: 마지막 접촉 지속 시간(초)(숫자). 중요 참고 사항: 이 속성은 출력 대상에 큰 영향을 미칩니다(예: duration=0이면 y='no'). 그러나 호출이 수행되기 전의 지속 시간은 알 수 없습니다. 또한 호출이 끝난 후 y는 분명히 알려져 있습니다. 따라서, 이 입력은 벤치마크 목적으로만 포함되어야 하며 실제 예측 모델을 갖고자 하는 경우에는 폐기해야 합니다.
+# 기타 속성:
+13 campaign - 캠페인: 이 캠페인 동안 및 이 클라이언트에 대해 수행된 컨택 수(숫자, 마지막 컨택 포함)
+14 pdays    - 휴일 : 이전 캠페인에서 클라이언트가 마지막으로 컨택된 후 경과한 일 수(숫자, 999는 클라이언트가 연결되지 않았음을 의미합니다. 이전에 연락됨)
+15 previous - 이전 : 이 캠페인 이전에 이 클라이언트에 대해 수행된 컨택 수(숫자)
+16 poutcome - poutcome: 이전 마케팅 캠페인의 결과(범주: '실패', '존재하지 않음', '성공')
+# 출력 변수(희망) target):
+17 - y - 고객이 정기 예금에 가입했습니까? (이진법: '예', '아니오')

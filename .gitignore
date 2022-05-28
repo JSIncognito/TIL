@@ -1,0 +1,7 @@
+MTCP_DLAI/python_class/keras/*
+*.pyc
+*.swp
+*.exe
+*.xlsx
+*.zip
+*.pdf

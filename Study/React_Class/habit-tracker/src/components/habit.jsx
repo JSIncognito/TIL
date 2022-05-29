@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 
 class Habit extends Component {
-  state = {
-    count: 0,
+  // Habit commponent 는 State 는 없고,외부에서 Props 로 전달받은 습관이 habit 이라는 오브젝트의 데이터를 보여주기만 하는 컴포넌트이다.
+  handleIncrement = () => {
+    // this.props.habit.count += 1;
+    this.props.onIncrement(this.props.habit);
   };
-
-  handleIncrement = (event) => {
-    // console.log(event);
-    // state 오브젝트 안에 있는 count 를 증가 한뒤 state 를 업데이트 해야 함.
-    // this.state.count += 1; // React 는 옆의 코드와 같이 변경을 했을때, 업데이트 되었는지 알수없음. (부분적으로 업데이트를 할 수 없음.)
-    this.setState({ count: this.state.count + 1 }); // React 에서 제공하는 setState 를 사용해야함.
+  handleDecrement = () => {
+    this.props.onDecrement(this.props.habit);
   };
-  handleDecrement = (event) => {
-    const count = this.state.count - 1;
-    this.setState({ count: count < 0 ? 0 : count });
+  handleDelete = () => {
+    this.props.onDelete(this.props.habit);
   };
   render() {
     // console.log(this.props.habit);
@@ -36,7 +33,10 @@ class Habit extends Component {
         >
           <i className="fa-solid fa-square-minus"></i>
         </button>
-        <button className="habit-button habit-delete">
+        <button
+          className="habit-button habit-delete"
+          onClick={this.handleDelete}
+        >
           <i className="fa-solid fa-trash"></i>
         </button>
       </li>

@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Habit extends Component {
   // Habit commponent 는 State 는 없고,외부에서 Props 로 전달받은 습관이 habit 이라는 오브젝트의 데이터를 보여주기만 하는 컴포넌트이다.
   handleIncrement = () => {
-    // this.props.habit.count += 1;
     this.props.onIncrement(this.props.habit);
   };
   handleDecrement = () => {
@@ -13,8 +12,6 @@ class Habit extends Component {
     this.props.onDelete(this.props.habit);
   };
   render() {
-    // console.log(this.props.habit);
-    // const habitName = this.props.habit.name;
     const { name, count } = this.props.habit;
 
     return (

@@ -3,6 +3,9 @@ import Habit from './habit';
 import HabitAddForm from './habitAddForm';
 
 class Habits extends Component {
+  // componentDidUpdate() {
+  //   //
+  // }
   handleIncrement = (habit) => {
     this.props.onIncrement(habit);
   };
@@ -25,6 +28,7 @@ class Habits extends Component {
   handleReset = () => {};
 
   render() {
+    console.log('habits');
     return (
       <>
         <HabitAddForm onAdd={this.handleAdd} />

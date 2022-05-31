@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 
-class Navbar extends Component {
+class Navbar extends PureComponent {
   // hanleTotalCount = (navbar) => {
   //   console.log(`this.props ${this.props}`);
   //   console.log(`this.props ${navbar}`);
   // };
   render() {
+    console.log('navbar');
     return (
       <nav className="navbar">
         <i className="navbar-logo fa-light fa-star"></i>

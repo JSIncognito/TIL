@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.navbar {
+  font-size: 2rem;
+  padding: 1em;
+  background-color: black;
+}
+
+.navbar-logo {
+  color: red;
+  font-size: 2rem;
+  margin-right: 0.5em;
+  height: 2rem;
+  width: 2rem;
+}
+
+.navbar-name {
+  display: inline-block;
+  color: white;
+}
+
+.add-form {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+.search-input {
+  font-size: 1.5rem;
+  /* margin-right: 0.5em; */
+}
+
+.add-button {
+  /* height: 75%; */
+  font-size: 1.3rem;
+  padding: 0.3em 0.5em;
+  color: darkgray;
+}
+
+.vidio-box {
+  font-size: 2rem;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: antiquewhite;
+  width: 50%;
+}
+
+.vidio {
+  float: left;
+  display: inline-block;
+}

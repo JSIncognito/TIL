@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
+import Youtube from './service/youtube';
 import '@fortawesome/fontawesome-free/js/all.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const youtube = new Youtube(process.env.REACT_APP_YOUTUBE_API_KEY);
+
 root.render(
   <React.StrictMode>
-    <App />
+    <App youtube={youtube} />
   </React.StrictMode>
+  // document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
